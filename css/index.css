@@ -1,4 +1,3 @@
-
 :root { 
   --white: #f0f4f7; 
   --grey: #445264; 
@@ -15,12 +14,35 @@
   --body-p1-bold: 700 1.25rem/2rem 'Plus Jakarta Sans'; 
   --body-p2-regular: 400 0.875rem/2.5rem 'Plus Jakarta Sans'; 
   --body-p2-bold: 700 0.875rem/2.5rem 'Plus Jakarta Sans'; 
-  --body-p3-regular: 400 0.75rem/2.5rem 'Plus Jakarta Sans';      
+  --body-p3-regular: 400 0.75rem/2.5rem 'Plus Jakarta Sans';    
+  --button: 700 18px 'Plus Jakarta Sans';
+}
+
+/* font-family: 'Plus Jakarta Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 150%; */
+
+body {
+  box-sizing: border-box;
+  font: var(--body-p1-regular);
+  color: var(--grey);
+  background-color: var(--white);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--grey);
 }
 
 h1{
-  color: var(--primary);
+  color: var(--blue-dark);
   font: var(--h1);
+  margin: 0;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 h2{
@@ -33,3 +55,170 @@ p{
   font: var(--body-p1-regular);
 }
 
+.wrapper {
+
+  padding-left: 120px;
+  padding-right: 120px;
+
+}
+
+
+button {
+  width: 161px;
+  height: 55px;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 6px;
+  color: var(--white);
+  font: var(--button);
+}
+
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+  height: 55px;
+  border:1px red solid ;
+  margin-top: 24px;
+  
+}
+
+header .wrapper {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo-nav {
+ 
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+}
+
+nav .options-nav {
+  display: flex;
+  width: 620px;
+  justify-content: space-around;
+  align-items: center;
+  font: var(--body-p2-regular);
+  opacity: 80%;
+  
+}
+
+/* seccion1 */
+
+section {
+  margin-top: 144px;
+}
+
+ .section-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 440px;
+ }
+
+ .section-1 .info{
+    border: 1px red solid;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: space-between;
+ }
+
+ .section-1 button{
+  width: 257px;
+  height: 55px;
+}
+ 
+.section-1 picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.section-1 picture .icon {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  position: absolute;
+}
+
+.section-1 picture .gradients{
+  display: inline-block;
+  width: 335px;
+  height: 335px;
+  background: rgba(118, 206, 244, 1);
+  filter: blur(150px);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.section-1 picture .gradients-2{
+  display: inline-block;
+  width: 335px;
+  height: 335px;
+  background: rgba(118, 206, 244, 1);
+  filter: blur(150px);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.section-1 picture .icon:nth-child(1) {
+  background-image: url(../icons/add.svg);
+  background-repeat:no-repeat;
+  top: 8%;
+  right: 10%;
+}
+
+.section-1 picture .icon:nth-child(2) {
+  background-image: url(../icons/drug.svg);
+  background-repeat:no-repeat;
+  bottom: 8%;
+  right: 4%;
+  
+}
+.section-1 picture .icon:nth-child(3) {
+  background-image: url(../icons/disability.svg);
+  background-repeat:no-repeat;
+  bottom: 10%;
+  left: 8%;
+}
+
+.section-1 picture .gradients {
+  bottom: -20%;
+  right: -10%;
+}
+
+.section-1 picture .gradients-2 {
+  top: -20%;
+  left: -10%;
+}
+  
+
+
+
+ /* section2 */
+
+ .section-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
+
+ .section-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+ }
