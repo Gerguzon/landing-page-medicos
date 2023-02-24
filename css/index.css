@@ -1,0 +1,129 @@
+
+:root { 
+  --white: #f0f4f7; 
+  --grey: #445264; 
+  --primary: #58c0a6; 
+  --green-dark: #04503d; 
+  --blue-dark: #222e55; 
+  --greey-ligth: #e4e4e4; 
+  --green-ligth: #e9f7fc; 
+  --h1: 800 4rem/5rem 'Plus Jakarta Sans'; 
+  --h2: 700 2.5rem/4rem 'Plus Jakarta Sans'; 
+  --h3: 800 1.75rem/3.5rem 'Plus Jakarta Sans'; 
+  --h4: 700 1.125rem/3rem 'Plus Jakarta Sans'; 
+  --body-p1-regular: 400 1.25rem/2rem 'Plus Jakarta Sans'; 
+  --body-p1-bold: 700 1.25rem/2rem 'Plus Jakarta Sans'; 
+  --body-p2-regular: 400 0.875rem/2.5rem 'Plus Jakarta Sans'; 
+  --body-p2-bold: 700 0.875rem/2.5rem 'Plus Jakarta Sans'; 
+  --body-p3-regular: 400 0.75rem/2.5rem 'Plus Jakarta Sans';      
+}
+
+h1{
+  color: var(--blue-dark);
+  font: var(--h3);
+}
+
+h2{
+  color: var(--green-dark);
+  font: var(--h2);
+}
+
+p{
+  color: var(--grey);
+  font: var(--body-p1-regular);
+}
+
+body {
+  margin: 0;
+}
+
+
+/* wrapper */
+
+.wrapper {
+  min-width: 320px;
+  margin: 0 20px;
+}
+
+
+/* header */
+
+header{
+  min-width: 320px;
+  height: 100px;
+}
+
+header nav {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav .logo {
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 140%;
+  color: var(--green-dark);
+  text-decoration: none;
+}
+
+header nav .burger-menu {
+  width: 24px;
+  height: 24px;
+  background-image: url("/icons/Menu.svg");
+  background-repeat: no-repeat ;
+  margin-inline-end: 7px;
+
+}
+
+
+/* hero */
+
+.hero {
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  min-width: 320px;
+}
+
+.button-1 {
+  display: inline-flex;
+  width: 320px;
+  height: 47px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--white);
+  text-decoration: none;
+  background-color: var(--primary);
+  border-radius: 6px;
+}
+
+.hero .fondo-imagen {
+  width: 254px;
+  height: 269px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-color: var(--primary);
+  border: 8px var(--white) solid;
+  border-radius: 50% 50% 14px 14px;
+}
+
+.hero .fondo-imagen img {
+  width: 167.37px;
+  height: 244.92px;
+}
+
+/* debbug */
+
+.debbug {
+  border: 1px solid red;
+}
