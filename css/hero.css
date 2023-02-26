@@ -1,0 +1,111 @@
+.hero {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    min-width: 320px;
+  }
+  
+  .button-1 {
+    display: inline-flex;
+    width: 320px;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--primary);
+    border-radius: 6px;
+    margin-top: 20px;
+  }
+  
+  /* imagen del doctor 1 */
+  
+  .hero .fondo-imagen {
+    box-sizing: border-box;
+    width: 254px;
+    height: 269px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: var(--primary);
+    border: 8px var(--white) solid;
+    border-radius: 50% 50% 14px 14px;
+  
+  }
+  
+  .hero .fondo-imagen img {
+    width: 167.37px;
+    height: 244.92px;
+  
+  }
+  
+  /* gradientes de fondo */
+  
+  .background-elements {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 254px;
+    height: 269px;
+    margin-top: 64px;
+  
+  
+  }
+  
+  
+  .gradient-background {
+    display: flex;
+    width: 157px;
+    height: 157px;
+    background: rgba(118, 206, 244, 0.5);
+    filter: blur(79.0966px);
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .background-elements .gradient-background:nth-child(2) {
+    bottom:-40px;
+   
+   
+  }
+  
+  
+  /* elementos flotantes alrededor del doc */
+  
+  .decoration-element {
+    width: 47.15px;
+    height: 46.99px;
+    box-sizing: border-box;
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    border-radius: 16px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  
+  .background-elements .plus {
+    background-image: url("../icons/add.svg");
+    background-size: cover;
+    right: 4px;
+  }
+  
+  .background-elements .disability {
+    background-image: url("../icons/disability.svg");
+    background-size: cover;
+    left: -34px;
+    bottom: 60px;
+  }
+  
+  .background-elements .drug {
+    background-image: url("../icons/drug.svg");
+    background-size: cover;
+    right: -34px;
+    bottom: 30px;
+  }

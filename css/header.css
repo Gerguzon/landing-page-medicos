@@ -1,0 +1,34 @@
+/* header */
+
+header{
+    min-width: 320px;
+    height: 100px;
+
+}
+  
+header nav {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+header nav .logo {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 140%;
+    color: var(--green-dark);
+    text-decoration: none;
+}
+  
+header nav .burger-menu {
+    width: 24px;
+    height: 24px;
+    background-image: url("/icons/Menu.svg");
+    background-repeat: no-repeat ;
+    margin-inline-end: 7px;
+  
+}
+
