@@ -1,0 +1,90 @@
+.beneficio-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 139px;
+}
+
+
+
+.beneficio-1 p {
+    font: var(--body-p2-regular);
+    line-height:23.8px;
+    color: var(--grey);
+    text-decoration: none;
+    margin-bottom:20px ;
+}
+
+ /* lista  */
+
+.beneficio-1 ul {
+    width:100% ;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.beneficio-1 ul li {
+    font: var(--body-p2-regular);
+    color: var(--grey);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    line-height: 23.8px;
+
+}
+
+
+.beneficio-1 ul .list-icon {
+    width: 50px;
+    height: 50px;
+    
+}
+
+.shield {
+    background-image: url("../icons/shield.svg");
+    margin-right: 12px;
+}
+
+.virus {
+    background-image:url("../icons/covid.svg") ;
+    margin-right: 12px;
+}
+
+.hospital {
+    background-image:url("../icons/hospital.svg") ;
+    margin-right: 12px;
+}
+
+/* imagen del doctor */
+
+.beneficio-1 .image-container{
+    min-width: 320px;
+    height: 294.86px;
+    margin: 0;
+   
+   
+}
+
+.beneficio-1 figure {
+    width: 278.04px;
+    height: 294.86px;
+    background: linear-gradient(180deg, #58C0A6 0%, #1D9FC8 100%);
+    border-radius: 14px 14px 50% 50%;
+    border: 8px var(--white) solid;
+    position: absolute;
+    margin: 0;
+    
+    
+    
+}
+
+
+.beneficio-1 figure img {
+    width: 296.01px;
+    height: 305.21px;
+    position: relative;
+   
+}

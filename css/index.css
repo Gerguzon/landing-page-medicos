@@ -1,6 +1,8 @@
 @import "./header.css";
 @import "./hero.css";
 @import "./mobile-menu.css";
+@import "./beneficio-1.css";
+@import "./beneficio-2.css";
 
 :root { 
   --white: #f0f4f7; 
@@ -26,11 +28,18 @@ h1{
   font: var(--h3);
   margin-top: 0;
   margin-bottom: 20px;
+  line-height: 36.4px;
 }
 
 h2{
-  color: var(--green-dark);
+  color: var(--blue-dark);
   font: var(--h2);
+}
+
+h4 {
+  color: var(--blue-dark);
+  font: var(--h4);
+  line-height: 23px;
 }
 
 p{
